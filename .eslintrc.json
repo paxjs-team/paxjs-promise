@@ -1,0 +1,39 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "classes": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "plugins": ["prettier"],
+  "extends": ["prettier", "eslint:recommended"],
+  "rules": {
+    "arrow-body-style": ["warn", "as-needed"],
+    "no-tabs": "error",
+    "semi": ["error", "never"],
+    "no-extra-semi": "off",
+    "no-unused-vars": "warn",
+    "prettier/prettier": "warn",
+    "no-implicit-coercion": "warn",
+    "padding-line-between-statements": [
+      "warn",
+      { "blankLine": "always", "prev": "*", "next": "if" },
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+      {
+        "blankLine": "any",
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
+      }
+    ]
+  }
+}

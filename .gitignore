@@ -1,0 +1,5 @@
+**/node_modules/**/*
+*.sublime-workspace
+/index.js
+/delay.js
+/time.js

@@ -1,0 +1,4 @@
+{
+  "**/*.{js,json,md,sublime-project}": ["pretty-quick --staged", "git add"],
+  "**/*.js": ["eslint --fix --max-warnings=0", "git add"]
+}
